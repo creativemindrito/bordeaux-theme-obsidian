@@ -1,0 +1,241 @@
+/* Bordeaux: matte, red and gold. */
+
+body {
+  --font-interface-theme: "Segoe UI Variable Text", "Segoe UI", system-ui, sans-serif;
+  --font-text-theme: "Segoe UI Variable Text", "Segoe UI", system-ui, sans-serif;
+  --font-monospace-theme: "Cascadia Code", "Cascadia Mono", Consolas, monospace;
+  --bordeaux-heading: "Sitka Heading", "Sitka", Georgia, "Times New Roman", serif;
+  --inline-title-font: var(--bordeaux-heading);
+  --inline-title-style: italic;
+  --inline-title-weight: 600;
+  --h1-font: var(--bordeaux-heading);
+  --h2-font: var(--bordeaux-heading);
+  --h3-font: var(--bordeaux-heading);
+  --h1-style: italic;
+  --h1-weight: 600;
+  --h2-weight: 600;
+  --h3-weight: 600;
+  --link-decoration: none;
+  --callout-radius: 8px;
+}
+
+/* The reds, one line each. */
+.theme-dark {
+  --bordeaux-bar: #6e1016;
+  --bordeaux-fabric: #3a1212;
+  --bordeaux-accent: #b3262f;
+  --bordeaux-accent-hover: #c0303a;
+  --bordeaux-rose: #e0949a;
+  --bordeaux-gold: #d4a24c;
+  --bordeaux-cable: #5c3a3b;
+}
+
+/* The palette, dark only. */
+.theme-dark {
+  --color-base-00: #120809;
+  --color-base-05: #170a0b;
+  --color-base-10: #1c0c0d;
+  --color-base-20: #241011;
+  --color-base-25: #2b1314;
+  --color-base-30: #301516;
+  --color-base-35: #3d1c1d;
+  --color-base-40: #4d2627;
+  --color-base-50: #917576;
+  --color-base-60: #ab9393;
+  --color-base-70: #c9b3b3;
+  --color-base-100: #f4ebe7;
+
+  --accent-h: 356;
+  --accent-s: 65%;
+  --accent-l: 43%;
+  --color-accent-hsl: 356, 65%, 43%;
+  --color-accent: var(--bordeaux-accent);
+  --color-accent-1: #c0303a;
+  --color-accent-2: #cc3d46;
+  --interactive-accent: var(--bordeaux-accent);
+  --interactive-accent-hover: var(--bordeaux-accent-hover);
+  --interactive-accent-hsl: 356, 65%, 43%;
+  --interactive-normal: #301516;
+  --interactive-hover: #3d1c1d;
+
+  --background-primary: #1c0c0d;
+  --background-primary-alt: #241011;
+  --background-secondary: #170a0b;
+  --background-secondary-alt: #120809;
+  --background-modifier-border: #3d1c1d;
+  --background-modifier-border-hover: #4d2627;
+  --background-modifier-border-focus: var(--bordeaux-bar);
+  --background-modifier-hover: rgba(224, 148, 154, 0.07);
+  --background-modifier-active-hover: rgba(179, 38, 47, 0.22);
+  --background-modifier-form-field: #241011;
+  --background-modifier-cover: rgba(8, 3, 4, 0.8);
+  --background-modifier-error: #a8202a;
+  --background-modifier-success: #4f9a78;
+
+  --text-normal: #f4ebe7;
+  --text-muted: #c9b3b3;
+  --text-faint: #917576;
+  --text-on-accent: #f4ebe7;
+  --text-accent: var(--bordeaux-rose);
+  --text-accent-hover: #eaaeb2;
+  --text-selection: rgba(179, 38, 47, 0.35);
+  --text-highlight-bg: rgba(212, 162, 76, 0.28);
+  --text-error: #e5646a;
+  --text-success: #7fc6a0;
+  --text-warning: #e0a85a;
+  --caret-color: var(--bordeaux-rose);
+
+  --color-red: #e5646a;
+  --color-red-rgb: 229, 100, 106;
+  --color-orange: #ee8a63;
+  --color-orange-rgb: 238, 138, 99;
+  --color-yellow: #d9a94a;
+  --color-yellow-rgb: 217, 169, 74;
+  --color-green: #6fbf9a;
+  --color-green-rgb: 111, 191, 154;
+  --color-cyan: #5fc6c6;
+  --color-cyan-rgb: 95, 198, 198;
+  --color-blue: #7d97d9;
+  --color-blue-rgb: 125, 151, 217;
+  --color-purple: #b78ee0;
+  --color-purple-rgb: 183, 142, 224;
+  --color-pink: #e8b0c4;
+  --color-pink-rgb: 232, 176, 196;
+  --callout-default: 179, 38, 47;
+
+  --h1-color: var(--bordeaux-gold);
+  --h2-color: #e9c98a;
+  --h3-color: var(--bordeaux-rose);
+  --h4-color: #f4ebe7;
+  --h5-color: #c9b3b3;
+  --h6-color: #917576;
+  --inline-title-color: var(--bordeaux-gold);
+
+  --link-color: var(--bordeaux-rose);
+  --link-color-hover: #eaaeb2;
+  --link-external-color: var(--bordeaux-gold);
+  --link-external-color-hover: #e9c98a;
+  --link-unresolved-color: #ab9393;
+  --link-unresolved-opacity: 0.8;
+
+  --titlebar-background: var(--bordeaux-fabric);
+  --titlebar-background-focused: var(--bordeaux-bar);
+  --titlebar-text-color: #c9b3b3;
+  --titlebar-text-color-focused: #e9c98a;
+  --titlebar-border-color: #3d1c1d;
+
+  --tab-background-active: #1c0c0d;
+  --tab-container-background: #120809;
+  --tab-text-color: #d6c2c2;
+  --tab-text-color-active: #e8dcd8;
+  --tab-text-color-focused: #e8dcd8;
+  --tab-text-color-focused-active: #f4ebe7;
+  --tab-text-color-focused-highlighted: #e9c98a;
+  --tab-divider-color: #3d1c1d;
+  --tab-outline-color: #3d1c1d;
+
+  --nav-item-color: #c9b3b3;
+  --nav-item-color-hover: #f4ebe7;
+  --nav-item-color-active: #f4ebe7;
+  --nav-item-color-selected: #f4ebe7;
+  --nav-item-background-hover: rgba(224, 148, 154, 0.07);
+  --nav-item-background-active: var(--bordeaux-fabric);
+  --nav-item-background-selected: #301516;
+  --nav-indentation-guide-color: #3d1c1d;
+
+  --ribbon-background: #120809;
+  --ribbon-background-collapsed: #120809;
+  --status-bar-background: #120809;
+  --status-bar-text-color: #917576;
+  --status-bar-border-color: #3d1c1d;
+  --divider-color: #301516;
+
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: rgba(179, 38, 47, 0.3);
+  --scrollbar-active-thumb-bg: rgba(179, 38, 47, 0.55);
+
+  --code-background: #241011;
+  --code-normal: #e9c98a;
+  --code-comment: #917576;
+  --code-function: #d9a94a;
+  --code-important: #e5646a;
+  --code-keyword: var(--bordeaux-rose);
+  --code-operator: #c9b3b3;
+  --code-property: #7d97d9;
+  --code-punctuation: #ab9393;
+  --code-string: #6fbf9a;
+  --code-tag: #e5646a;
+  --code-value: #b78ee0;
+
+  --blockquote-border-color: var(--bordeaux-accent);
+  --blockquote-color: #c9b3b3;
+  --blockquote-background-color: rgba(110, 16, 22, 0.18);
+  --checkbox-color: var(--bordeaux-accent);
+  --checkbox-color-hover: var(--bordeaux-accent-hover);
+  --checkbox-border-color: #917576;
+  --checkbox-marker-color: #f4ebe7;
+  --tag-color: var(--bordeaux-rose);
+  --tag-color-hover: #f4ebe7;
+  --tag-background: rgba(179, 38, 47, 0.18);
+  --tag-background-hover: rgba(179, 38, 47, 0.3);
+  --tag-border-color: rgba(179, 38, 47, 0.35);
+  --table-border-color: #3d1c1d;
+  --table-header-background: #241011;
+  --table-header-color: #e9c98a;
+  --hr-color: #3d1c1d;
+
+  --icon-color: #ab9393;
+  --icon-color-hover: #f4ebe7;
+  --icon-color-active: var(--bordeaux-rose);
+  --icon-color-focused: #f4ebe7;
+  --modal-background: #1c0c0d;
+  --modal-border-color: #3d1c1d;
+  --menu-background: #1c0c0d;
+  --menu-border-color: #3d1c1d;
+  --slider-track-background: #3d1c1d;
+  --slider-thumb-border-color: #4d2627;
+  --toggle-thumb-color: #f4ebe7;
+
+  --shadow-s: 0 1px 2px rgba(0, 0, 0, 0.35);
+  --shadow-l: 0 4px 14px rgba(0, 0, 0, 0.45);
+  --input-shadow: inset 0 0 0 1px #3d1c1d;
+  --input-shadow-hover: inset 0 0 0 1px #4d2627;
+
+  --graph-line: var(--bordeaux-cable);
+  --graph-node: #c9b3b3;
+  --graph-node-focused: var(--bordeaux-gold);
+  --graph-node-tag: var(--bordeaux-rose);
+  --graph-node-unresolved: #6f5758;
+  --graph-node-attachment: var(--bordeaux-gold);
+  --graph-text: #f4ebe7;
+}
+
+/* Soft transitions, no gradients. */
+@media (prefers-reduced-motion: no-preference) {
+  .theme-dark .tree-item-self,
+  .theme-dark .workspace-tab-header,
+  .theme-dark .clickable-icon,
+  .theme-dark .side-dock-ribbon-action,
+  .theme-dark button,
+  .theme-dark .tag,
+  .theme-dark .internal-link,
+  .theme-dark .external-link {
+    transition: background-color 160ms ease, color 160ms ease, border-color 160ms ease;
+  }
+}
+
+/* Active note: flat bar. */
+.theme-dark .tree-item-self.is-active {
+  box-shadow: inset 2px 0 0 var(--color-accent);
+}
+
+/* No gloss on buttons. */
+.theme-dark button:not(.clickable-icon) {
+  background-image: none;
+}
+
+/* Slightly tighter headings. */
+.theme-dark .inline-title,
+.theme-dark .markdown-rendered h1 {
+  letter-spacing: -0.01em;
+}
